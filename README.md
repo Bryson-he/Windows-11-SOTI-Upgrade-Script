@@ -50,7 +50,7 @@ Organizations face challenges upgrading devices to Windows 11 at scale:
 **Script Content**
 
 Below is the complete PowerShell script for automating the Windows 11 upgrade process:
-```
+```powershell
 # Define paths
 $AssistantPath = "C:\Users\Public\Downloads\Windows11InstallationAssistant.exe"
 $LogFile = "C:\ProgramData\Windows11_Upgrade_Log.txt"
