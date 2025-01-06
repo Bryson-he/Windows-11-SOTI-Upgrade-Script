@@ -22,7 +22,7 @@ Organizations face challenges upgrading devices to Windows 11 at scale:
    ```
    powershell.exe -ExecutionPolicy Bypass -File "C:\Path\To\Script.ps1"
    ```
-4. **MDM Solution: Verify that your MDM supports file deployment and PowerShell script execution.
+4. **MDM Solution**: Verify that your MDM supports file deployment and PowerShell script execution.
 
 ## Deployment with SOTI MobiControl
 Step 1: Upload the Windows 11 Installation Assistant
