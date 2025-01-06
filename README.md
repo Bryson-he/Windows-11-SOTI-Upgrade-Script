@@ -19,7 +19,7 @@ Organizations face challenges upgrading devices to Windows 11 at scale:
 1. **Windows 11 Hardware Compatibility**: Ensure devices meet Windows 11 system requirements.
 2. **Installation Assistant**: Place `Windows11InstallationAssistant.exe` at `C:\Users\Public\Downloads`. The version used in this script is provided in the GitHub repository.
 3. **PowerShell Execution Policy**: Use the following to bypass restrictions if needed:
-   ```
+   ```powershell
    powershell.exe -ExecutionPolicy Bypass -File "C:\Path\To\Script.ps1"
    ```
 4. **MDM Solution**: Verify that your MDM supports file deployment and PowerShell script execution.
