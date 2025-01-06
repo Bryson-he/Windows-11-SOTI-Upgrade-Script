@@ -1,30 +1,21 @@
 # Windows 11 Upgrade Script
 
 ## Overview
-
 This PowerShell script automates the execution of the Windows 11 Installation Assistant to silently upgrade devices to Windows 11. It is designed for seamless deployment with an MDM solution like **SOTI MobiControl**, enabling bulk upgrades across multiple devices while ensuring proper logging and error handling.
 
----
-
 ## Why Use This Script?
-
 Organizations face challenges upgrading devices to Windows 11 at scale:
-
 - **Time-Consuming**: Manual upgrades require significant effort.
 - **Compatibility Concerns**: Ensuring hardware compatibility across devices.
 - **End-User Disruption**: Minimizing interruptions to user workflows.
 - **Automation Needs**: Leveraging MDM solutions to push upgrades remotely.
 
 ### Benefits of This Script:
-
 1. **Streamlined Process**: Automates the upgrade workflow using the Windows 11 Installation Assistant.
 2. **Reduced Manual Effort**: Deploy and execute scripts via SOTI or similar MDM systems.
 3. **Centralized Logging**: Provides clear logs for troubleshooting issues.
 
----
-
 ## Pre-Requisites
-
 1. **Windows 11 Hardware Compatibility**: Ensure devices meet Windows 11 system requirements.
 2. **Installation Assistant**: Place `Windows11InstallationAssistant.exe` at `C:\Users\Public\Downloads`.
 3. **PowerShell Execution Policy**: Use the following to bypass restrictions if needed:
@@ -37,9 +28,7 @@ Deployment with SOTI MobiControl
 Step 1: Upload the Windows 11 Installation Assistant
 
     Upload Windows11InstallationAssistant.exe to your MDM system.
-    Set the destination path to:
-
-    C:\Users\Public\Downloads
+    Set the destination path to: C:\Users\Public\Downloads
 
 Step 2: Upload the PowerShell Script
 
@@ -54,11 +43,9 @@ Step 3: Execute the Script
     Push the script to devices using your MDM’s Run Script feature.
     Use the following command:
 
-powershell.exe -ExecutionPolicy Bypass -File "C:\Users\Public\Downloads\UpgradeToWindows11.ps1"
+    powershell.exe -ExecutionPolicy Bypass -File "C:\Users\Public\Downloads\UpgradeToWindows11.ps1"
 
-Monitor logs at:
-
-    C:\ProgramData\Windows11_Upgrade_Log.txt
+    Monitor logs at: C:\ProgramData\Windows11_Upgrade_Log.txt
 
 Script Content
 
@@ -116,5 +103,5 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
-You can copy this directly into a **README.md** file in your GitHub repository, and it will render correctly with proper formatting!
+You should be able to copy and paste the entire block directly into a `README.md` file on GitHub now. It’s all in one continuous block without any additional sections you need to copy.
 
