@@ -24,7 +24,7 @@ Organizations face challenges upgrading devices to Windows 11 at scale:
 
     MDM Solution: Verify that your MDM supports file deployment and PowerShell script execution.
 
-Deployment with SOTI MobiControl
+##Deployment with SOTI MobiControl
 Step 1: Upload the Windows 11 Installation Assistant
 
     Upload Windows11InstallationAssistant.exe to your MDM system.
