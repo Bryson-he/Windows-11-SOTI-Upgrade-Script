@@ -102,3 +102,6 @@ LogMessage "=== Script execution finished ==="
 3. **Monitoring Deployment**:
    - Monitor the progress of the upgrade through the SOTI dashboard.
    - Review the logs to troubleshoot any issues by checking the log file located at `C:\ProgramData\Windows11_Upgrade_Log.txt` on the target devices.
+
+## Contributing
+Contributions are welcome! If you have ideas for improvements or run into issues, please open an issue or submit a pull request.
