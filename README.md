@@ -25,12 +25,12 @@ Organizations face challenges upgrading devices to Windows 11 at scale:
 4. **MDM Solution**: Verify that your MDM supports file deployment and PowerShell script execution.
 
 ## Deployment with SOTI MobiControl
-Step 1: Upload the Windows 11 Installation Assistant
+**Step 1**: Upload the Windows 11 Installation Assistant
 
     Upload Windows11InstallationAssistant.exe to your MDM system.
     Set the destination path to: C:\Users\Public\Downloads
 
-Step 2: Upload the PowerShell Script
+**Step 2**: Upload the PowerShell Script
 
     Save the script as UpgradeToWindows11.ps1.
     Upload the script to your MDM system.
@@ -38,7 +38,7 @@ Step 2: Upload the PowerShell Script
         Installation Assistant: C:\Users\Public\Downloads\Windows11InstallationAssistant.exe
         Log File: C:\ProgramData\Windows11_Upgrade_Log.txt
 
-Step 3: Execute the Script
+**Step 3**: Execute the Script
 
     Push the script to devices using your MDM’s Run Script feature.
     Use the following command:
@@ -47,7 +47,7 @@ Step 3: Execute the Script
 
     Monitor logs at: C:\ProgramData\Windows11_Upgrade_Log.txt
 
-Script Content
+**Script Content**
 
 Below is the complete PowerShell script for automating the Windows 11 upgrade process:
 ```
