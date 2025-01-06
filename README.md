@@ -68,7 +68,7 @@ LogMessage "=== Starting Windows 11 Upgrade Process ==="
 # Check if the Installation Assistant executable exists
 if (Test-Path $AssistantPath) {
     LogMessage "Windows 11 Installation Assistant found at: $AssistantPath"
-    
+   ``` 
     try {
         LogMessage "Starting the Installation Assistant in quiet mode..."
 
@@ -88,7 +88,7 @@ if (Test-Path $AssistantPath) {
 
 # End of script logging
 LogMessage "=== Script execution finished ==="
-
+```
 Example Usage with SOTI
 
     Upload the script and Installation Assistant to SOTI.
