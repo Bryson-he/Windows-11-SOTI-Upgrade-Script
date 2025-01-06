@@ -88,11 +88,17 @@ if (Test-Path $AssistantPath) {
 # End of script logging
 LogMessage "=== Script execution finished ==="
 ```
-Example Usage with SOTI
+## Example Usage with SOTI
 
-    Upload the script and Installation Assistant to SOTI.
-    Use the following command in SOTI’s Run Script feature:
+1. **Upload and Deploy the Script**:
+   - Copy and paste the `UpgradeToWindows11.ps1` script into the **Managed Scripts** section of SOTI MobiControl.
+   - Push the script to devices individually or in bulk, depending on your deployment needs.
 
-    powershell.exe -ExecutionPolicy Bypass -File "C:\Users\Public\Downloads\UpgradeToWindows11.ps1"
+2. **Setting Up a Scheduled Upgrade**:
+   - To automate the upgrade process at a specific time, create a **package** that deploys the `Windows11InstallationAssistant.exe` to the correct location (`C:\Users\Public\Downloads`).
+   - Create a **profile** to deploy this package to the target devices.
+   - Use SOTI's **Task Scheduler** to schedule the execution of the PowerShell script (`UpgradeToWindows11.ps1`) at a specified time, ensuring the upgrade happens without manual intervention.
 
-    Monitor deployment progress via the SOTI dashboard and check logs for troubleshooting.
+3. **Monitoring Deployment**:
+   - Monitor the progress of the upgrade through the SOTI dashboard.
+   - Review the logs to troubleshoot any issues by checking the log file located at `C:\ProgramData\Windows11_Upgrade_Log.txt` on the target devices.
