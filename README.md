@@ -1,7 +1,7 @@
 # Windows 11 Upgrade Script
 
 ## Overview
-This PowerShell script automates the execution of the Windows 11 Installation Assistant to silently upgrade devices to Windows 11. It is designed for seamless deployment with an MDM solution like **SOTI MobiControl**, enabling bulk upgrades across multiple devices while ensuring proper logging and error handling.
+This PowerShell script automates the execution of the [Windows 11 Installation Assistant](https://www.microsoft.com/en-us/software-download/windows11) to silently upgrade devices to Windows 11. It is designed for seamless deployment with an MDM solution like **SOTI MobiControl**, enabling bulk upgrades across multiple devices while ensuring proper logging and error handling. The version of the Installation Assistant used in this script is included in the GitHub repository.
 
 ## Why Use This Script?
 Organizations face challenges upgrading devices to Windows 11 at scale:
@@ -11,18 +11,18 @@ Organizations face challenges upgrading devices to Windows 11 at scale:
 - **Automation Needs**: Leveraging MDM solutions to push upgrades remotely.
 
 ### Benefits of This Script:
-1. **Streamlined Process**: Automates the upgrade workflow using the Windows 11 Installation Assistant.
+1. **Streamlined Process**: Automates the upgrade workflow using the [Windows 11 Installation Assistant](https://www.microsoft.com/en-us/software-download/windows11).
 2. **Reduced Manual Effort**: Deploy and execute scripts via SOTI or similar MDM systems.
 3. **Centralized Logging**: Provides clear logs for troubleshooting issues.
 
 ## Pre-Requisites
 1. **Windows 11 Hardware Compatibility**: Ensure devices meet Windows 11 system requirements.
-2. **Installation Assistant**: Place `Windows11InstallationAssistant.exe` at `C:\Users\Public\Downloads`.
+2. **Installation Assistant**: Place `Windows11InstallationAssistant.exe` at `C:\Users\Public\Downloads`. The version used in this script is provided in the GitHub repository.
 3. **PowerShell Execution Policy**: Use the following to bypass restrictions if needed:
    ```powershell
    powershell.exe -ExecutionPolicy Bypass -File "C:\Path\To\Script.ps1"
 
-    MDM Solution: Verify that your MDM supports file deployment and PowerShell script execution.
+4. **MDM Solution: Verify that your MDM supports file deployment and PowerShell script execution.
 
 ## Deployment with SOTI MobiControl
 Step 1: Upload the Windows 11 Installation Assistant
