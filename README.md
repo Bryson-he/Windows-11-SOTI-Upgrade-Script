@@ -50,7 +50,7 @@ Step 3: Execute the Script
 Script Content
 
 Below is the complete PowerShell script for automating the Windows 11 upgrade process:
-
+```
 # Define paths
 $AssistantPath = "C:\Users\Public\Downloads\Windows11InstallationAssistant.exe"
 $LogFile = "C:\ProgramData\Windows11_Upgrade_Log.txt"
@@ -68,7 +68,6 @@ LogMessage "=== Starting Windows 11 Upgrade Process ==="
 # Check if the Installation Assistant executable exists
 if (Test-Path $AssistantPath) {
     LogMessage "Windows 11 Installation Assistant found at: $AssistantPath"
-   ``` 
     try {
         LogMessage "Starting the Installation Assistant in quiet mode..."
 
@@ -97,11 +96,3 @@ Example Usage with SOTI
     powershell.exe -ExecutionPolicy Bypass -File "C:\Users\Public\Downloads\UpgradeToWindows11.ps1"
 
     Monitor deployment progress via the SOTI dashboard and check logs for troubleshooting.
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-You should be able to copy and paste the entire block directly into a `README.md` file on GitHub now. It’s all in one continuous block without any additional sections you need to copy.
-
